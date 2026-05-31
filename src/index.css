@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Premium Cobalt Blue overrides for Indigo classes */
+  --color-indigo-50: #f1f5fe;
+  --color-indigo-100: #e2ebff;
+  --color-indigo-200: #bfd3ff;
+  --color-indigo-300: #8fafff;
+  --color-indigo-400: #5a84ff;
+  --color-indigo-500: #3b66ff;
+  --color-indigo-600: #1b43ea;
+  --color-indigo-700: #122ec2;
+  --color-indigo-800: #0e2096;
+  --color-indigo-900: #0a1464;
+  --color-indigo-950: #050838;
+
+  /* Premium Cobalt Blue overrides for Blue classes to make the branding fully unified */
+  --color-blue-50: #f1f5fe;
+  --color-blue-100: #e2ebff;
+  --color-blue-200: #bfd3ff;
+  --color-blue-300: #8fafff;
+  --color-blue-400: #5a84ff;
+  --color-blue-500: #3b66ff;
+  --color-blue-600: #1b43ea;
+  --color-blue-700: #122ec2;
+  --color-blue-800: #0e2096;
+  --color-blue-900: #0a1464;
+  --color-blue-950: #050838;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-slate-900;
+  }
+}
+
+/* Custom scrollbar for better UX */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
